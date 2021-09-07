@@ -46,3 +46,5 @@ You can get the latest version of the library from git:
 
 Doxygen API docs for development: https://libwebsockets.org/lws-api-doc-main/html/index.html
 
+# rtc-libwebsockets
+本仓库是添加了BUILD.gn,方便webrtc依赖使用。

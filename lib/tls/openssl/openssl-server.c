@@ -453,7 +453,7 @@ check_key:
 #if !defined(LWS_HAVE_SSL_EXTRA_CHAIN_CERTS)
 	x = sk_X509_value(vhost->tls.ssl_ctx->extra_certs, 0);
 #else
-	SSL_CTX_get_extra_chain_certs_only(vhost->tls.ssl_ctx, &extra_certs);
+	SSL_CTX_get_extra_chain_certs(vhost->tls.ssl_ctx, &extra_certs);
 	if (extra_certs)
 		x = sk_X509_value(extra_certs, 0);
 	else
